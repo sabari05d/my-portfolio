@@ -1,0 +1,576 @@
+/* Portfolio Project */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: white;
+}
+/* Navigation Bar */
+#nav{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    background-color: rgb(250, 250, 250);
+}
+#nav>.empty{
+    height: 100%;
+    width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    /* border: 1px solid red; */
+}
+#nav>.empty>div{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+#nav>.empty>div>.normal{
+    font-size: 45px;
+    /* margin-bottom: 40px; */
+}
+#nav>.empty>div>.txt{
+    font-size: 45px;
+    color: rgb(35, 228, 35);
+}
+#nav>.text{
+    height: 100%;
+    width: 50%;
+    /* background-color: green; */
+}
+#nav>.text>ol{
+    list-style: none;
+    display: flex;  
+    justify-content: space-evenly;
+    margin-top: 28px;
+    align-items: center;
+}
+#nav>.text>ol>li>a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ====== Nav Bar Completed ====== */
+/* Home Page */
+#firstpage{
+    height: 88vh;
+    width: 100%;
+    /* background-color: red; */
+    /* background: linear-gradient(to right,#FCCF31 , #F55555); */
+    /* backdrop-filter: inherit; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+#firstpage>.content{
+    margin-top: 50px;
+    height: 60%;
+    width: 80%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#firstpage>.content>.text{
+    height: 100%;
+    width: 50%;
+    /* background-color: aqua; */
+}
+#firstpage>.content>.text>h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+    /* color: white; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#firstpage>.content>.text>div>nav{
+    display: flex;
+}
+#firstpage>.content>.text>div>nav>h1{
+    /* margin-left: 5px; */
+    font-size: 36px;
+    margin-bottom: 10px;
+    /* color: white; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#firstpage>.content>.text>div>nav>.hello{
+    /* margin-left: 10px; */
+    margin-right: 10px;
+    color: #fc4c07;
+}
+#firstpage>.content>.text>div>nav>.name{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fc4c07;
+}
+#firstpage>.content>.text>p{
+    font-size: 18px;
+    /* font-weight: 500; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+#firstpage>.content>.text>h5{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+#firstpage>.content>.text>button{
+    height: 30px;
+    width: 120px;
+    margin-right: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: white;
+    border: 1px solid #FF512F;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #e49d3b  51%, #f54826  100%);
+    transition: 1s;
+    touch-action: cross-slide-x;
+}
+#firstpage>.content>.text>button>a{
+    color: white;
+    text-decoration: none;
+}
+#firstpage>.content>.text>button:hover{
+    background-position: right center;
+    /* color: #fff; */
+    text-decoration: none;
+}
+#firstpage>.content>.text>button:active{
+    transform: scale(0.95);
+}
+#firstpage>.content>.text>.contact{
+    width: 100px;
+}
+#firstpage>.content>.photo{
+    height: 500px;
+    width: 350px;
+    margin-top: 100px;
+    margin-left: 100px;
+    /* border: 1px solid red; */
+    /* background-color: blue; */
+}
+#firstpage>.content>.photo>.bg{
+    height: 450px;
+    width: 340px;
+    border-radius: 170px 100px 100px 70px ;
+    background:  #ff7139;
+    padding-bottom: 30px;
+}
+#firstpage>.content>.photo>.bg>img{
+    height: 450px;
+    width: 380px;  
+}
+/* ===== Home Page Completed */
+/* About Page  */
+#about{
+    height: 80vh;
+    width: 100%;
+    /* border-top: 1px solid #d48516; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 1px solid #d48516; */
+}
+#about>.box{
+    height: 80%;
+    width: 90%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about>.box>.content{
+    height: 100%;
+    width: 65%;    
+}
+#about>.box>.content>h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    color: #fc4c07;
+}
+#about>.box>.content>ul>li{
+    margin-left: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: square;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#about>.box>.info{
+    height: 100%;
+    width: 35%;
+    /* border: 1px solid red; */
+}
+#about>.box>.info>h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin-left: 80px;
+    color: #fc4c07;
+}
+#about>.box>.info>table{
+    margin-top: 10px;
+    margin-left: 80px;
+    height: 70%;
+    font-size: 18px;
+    /* border: 1px solid black; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* ====== About Me Page Completed ====== */
+/* Education Page */
+#education{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 1px solid #d48516; */
+}
+#education>.box{
+    height: 90%;
+    width: 90%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#education>.box>.content{
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid red; */
+}
+#education>.box>.content>h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    margin-left: 20px;
+    color: #fc4c07;
+}
+#education>.box>.content>.study{
+    height: 80%;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+#education>.box>.content>.study>nav{
+    margin-left: 50px;
+}
+#education>.box>.content>.study>.dip>h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    
+}
+#education>.box>.content>.study>.dip>h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px; 
+    font-size: 20px;
+    font-weight: 500;
+}
+#education>.box>.content>.study>.sslc>h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+#education>.box>.content>.study>.sslc>h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px; 
+    font-size: 20px;
+    font-weight: 500;
+
+}
+#education>.box>.info{
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#education>.box>.info>.training{
+    height: 50%;
+    width: 90%;
+    /* border: 1px solid red; */
+}
+#education>.box>.info>.training>h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
+    color: #fc4c07;
+}
+#education>.box>.info>.training>.text{
+    height: 80%;
+    width: 95%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: 5px;
+    padding-left: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 10px;
+}
+#education>.box>.info>.training>.text>h3{
+    margin-top: 5px;
+}
+#education>.box>.info>.training>.text>p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+#education>.box>.info>.certi{
+    height: 50%;
+    width: 90%;
+    margin-top: 20px;
+    /* border: 1px solid blue; */
+}
+#education>.box>.info>.certi>h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
+    color: #fc4c07;
+}
+#education>.box>.info>.certi>.text{
+    height: 80%;
+    width: 95%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: 5px;
+    padding-left: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 10px;
+}
+#education>.box>.info>.certi>.text>h3{
+    margin-top: 5px;
+}
+#education>.box>.info>.certi>.text>p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+/* ===== Education Page Completed ====== */
+/* Project Page */
+#project{
+    height: 80vh;
+    width: 100%;
+    /* border-bottom:1px solid #d48516; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#project>.box{
+    height: 90%;
+    width: 80%;
+    /* border: 1px solid red; */
+}
+#project>.box>.text{
+    height: 25%;
+    width: 100%;
+    /* border: 1px solid blue; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#project>.box>.text>h1{
+    font-size: 40px;
+    margin-top: 15px;
+    color: #fc4c07;
+}
+#project>.box>.text>h3{
+    margin-top: 10px;
+    /* color: rgb(4, 4, 168; */
+}
+#project>.box>.content{
+    height: 75%;
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#project>.box>.content>.proj1{
+    height: 80%;
+    width: 30%;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#project>.box>.content>.proj1>.img{
+    height: 30%;
+    width: 80%;
+    /* border: 1px solid red; */
+}
+#project>.box>.content>.proj1>.img>div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 2px double gray;
+}
+#project>.box>.content>.proj1>.img>div>.img1{
+    height: 50px;
+    width: 50px;
+}
+#project>.box>.content>.proj1>.img>div>.img2{
+    height: 50px;
+    width: 50px;
+    margin-top: 3px;
+    margin-bottom: 15px;
+}
+#project>.box>.content>.proj1>.text{
+    height: 60%;
+    width: 80%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#project>.box>.content>.proj1>.text>h4{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#project>.box>.content>.proj2{
+    height: 80%;
+    width: 30%;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#project>.box>.content>.proj2>.img{
+    height: 30%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px double gray;
+    /* border: 1px solid red; */
+}
+#project>.box>.content>.proj2>.text{
+    height: 60%;
+    width: 80%;
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 500;
+}
+#project>.box>.content>.proj2>.text>h1{
+    font-size: 20px;
+    margin-top:15px;
+    margin-bottom: 10px;
+}
+/* ====== Project page Completed ====== */
+/* Footer Page */
+#footer{
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#footer>.heading{
+    height: 25%;
+    width: 70%;
+    /* border: 1px solid salmon; */
+}
+#footer>.heading>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+#footer>.heading>div>h1{
+    font-size: 45px;
+}
+#footer>.heading>div>.txt{
+    color: rgb(35, 228, 35);
+}
+#footer>.nav{
+    height: 10%;
+    width: 70%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+}
+#footer>.nav>ul{
+    width: 80%;
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    
+}
+#footer>.nav>ul>li>a{
+    color: gray;
+    font-size: 14px;
+    text-decoration: none;
+}
+#footer>.icon{
+    height: 20%;
+    width: 70%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+#footer>.icon>ul{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#footer>.icon>ul>li>a:hover{
+    cursor: pointer;
+    text-decoration: none;
+
+}
+#footer>.icon>ul>li .img1{
+    height: 35px;
+    width: 37px;
+}
+#footer>.icon>ul>li .img2{
+    height: 43px;
+    margin-top: 1px;
+    width: 40px;
+}
+#footer>.icon>ul>li .img3{
+    height: 36px;
+    width: 37px;
+}
+#footer>.icon>ul>li .img4{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+#footer>.credits{
+    margin-top: 40px;
+    height: 10%;
+    width: 70%;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
